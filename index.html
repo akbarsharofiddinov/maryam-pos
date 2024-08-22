@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MARYAM - Склады</title>
+    <link rel="stylesheet" href="./src/styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-inner">
+        <a href="/" class="left">
+          <i class="fa-solid fa-house"></i>
+        </a>
+        <div class="header-options right">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            style="fill: rgba(0, 0, 0, 1)"
+          >
+            <path
+              d="M20.742 13.045a8.088 8.088 0 0 1-2.077.271c-2.135 0-4.14-.83-5.646-2.336a8.025 8.025 0 0 1-2.064-7.723A1 1 0 0 0 9.73 2.034a10.014 10.014 0 0 0-4.489 2.582c-3.898 3.898-3.898 10.243 0 14.143a9.937 9.937 0 0 0 7.072 2.93 9.93 9.93 0 0 0 7.07-2.929 10.007 10.007 0 0 0 2.583-4.491 1.001 1.001 0 0 0-1.224-1.224zm-2.772 4.301a7.947 7.947 0 0 1-5.656 2.343 7.953 7.953 0 0 1-5.658-2.344c-3.118-3.119-3.118-8.195 0-11.314a7.923 7.923 0 0 1 2.06-1.483 10.027 10.027 0 0 0 2.89 7.848 9.972 9.972 0 0 0 7.848 2.891 8.036 8.036 0 0 1-1.484 2.059z"
+            ></path>
+          </svg>
+          <div class="profile">
+            <img src="./src/images/profile.jpg" alt="profile" />
+            <p>Admin <i class="fa-solid fa-angle-down"></i></p>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="main-content">
+      <div class="product-side">
+        <div class="top">
+          <input
+            type="text"
+            name="product-name"
+            id="product-name"
+            placeholder="Сканируйте/ищите продукт по коду или названию"
+          />
+          <!-- <div class="storage-select select">
+            <div class="selected">
+              Основной склад <span><i class="fa-solid fa-angle-down"></i></span>
+            </div>
+            <ul class="menu">
+              <li class="menu-item item-1">Основной склад</li>
+              <li class="menu-item item-2">Корзинка</li>
+              <li class="menu-item item-3">Базар</li>
+              <li class="menu-item item-4">Дом продуктов</li>
+            </ul>
+          </div>
+          <div class="seller-select select">
+            <div class="selected">
+              Admin <span><i class="fa-solid fa-angle-down"></i></span>
+            </div>
+            <ul class="menu">
+              <li class="menu-item item-1">Admin</li>
+            </ul>
+          </div> -->
+          <div>
+            <h1 class="place">Корзинка</h1>
+            <!-- <h1 class="seller">Admin</h1> -->
+            <button class="select-seller">Продавец <span>&plus;</span></button>
+          </div>
+        </div>
+        <!-- Products -->
+        <div class="products-list">
+          <div class="product-item">
+            <p>Relaxing Lavender Gel Dush 865ML</p>
+            <p>8809968130123</p>
+          </div>
+          <div class="product-item">
+            <p>Relaxing Lavender Gel Dush 865ML</p>
+            <p>8809968130123</p>
+          </div>
+          <div class="product-item">
+            <p>Relaxing Lavender Gel Dush 865ML</p>
+            <p>8809968130123</p>
+          </div>
+          <div class="product-item">
+            <p>Relaxing Lavender Gel Dush 865ML</p>
+            <p>8809968130123</p>
+          </div>
+          <div class="product-item">
+            <p>Relaxing Lavender Gel Dush 865ML</p>
+            <p>8809968130123</p>
+          </div>
+          <div class="product-item">
+            <p>Relaxing Lavender Gel Dush 865ML</p>
+            <p>8809968130123</p>
+          </div>
+          <div class="product-item">
+            <p>Relaxing Lavender Gel Dush 865ML</p>
+            <p>8809968130123</p>
+          </div>
+          <div class="product-item">
+            <p>Relaxing Lavender Gel Dush 865ML</p>
+            <p>8809968130123</p>
+          </div>
+          <p class="no-product">Нет продуктов</p>
+        </div>
+        <div class="products-box">
+          <div class="product-item">
+            <div class="left">
+              <input
+                type="number"
+                value="1"
+                name="count"
+                id="count"
+                class="count"
+              />
+              <div class="measure-select select">
+                <div class="selected">
+                  мл <span><i class="fa-solid fa-angle-down"></i></span>
+                </div>
+                <ul class="menu">
+                  <li class="menu-item item-1">Option-1</li>
+                  <li class="menu-item item-2">Option-2</li>
+                  <li class="menu-item item-3">Option-3</li>
+                </ul>
+              </div>
+              <h3 class="product-name">Product name</h3>
+              <span class="quantity">Текущее запас: 1 шт</span>
+            </div>
+            <div class="right">
+              <div class="product-price">
+                <span>80000</span>
+                <button class="edit-btn">
+                  <i class="fa-regular fa-pen-to-square"></i>
+                </button>
+              </div>
+              <div class="total-price">320000</div>
+              <button class="delete-btn">
+                <i class="fa-regular fa-trash-can"></i>
+              </button>
+            </div>
+          </div>
+          <div class="product-item">
+            <div class="left">
+              <input
+                type="number"
+                value="1"
+                name="count"
+                id="count"
+                class="count"
+              />
+              <div class="measure-select select">
+                <div class="selected">
+                  мл <span><i class="fa-solid fa-angle-down"></i></span>
+                </div>
+                <ul class="menu">
+                  <li class="menu-item item-1">Option-1</li>
+                  <li class="menu-item item-2">Option-2</li>
+                  <li class="menu-item item-3">Option-3</li>
+                </ul>
+              </div>
+              <h3 class="product-name">Product name</h3>
+              <span class="quantity">Текущее запас: 1 шт</span>
+            </div>
+            <div class="right">
+              <div class="product-price">
+                <span>80000</span>
+                <button class="edit-btn">
+                  <i class="fa-regular fa-pen-to-square"></i>
+                </button>
+              </div>
+              <div class="total-price">320000</div>
+              <button class="delete-btn">
+                <i class="fa-regular fa-trash-can"></i>
+              </button>
+            </div>
+          </div>
+          <div class="product-item">
+            <div class="left">
+              <input
+                type="number"
+                value="1"
+                name="count"
+                id="count"
+                class="count"
+              />
+              <div class="measure-select select">
+                <div class="selected">
+                  мл <span><i class="fa-solid fa-angle-down"></i></span>
+                </div>
+                <ul class="menu">
+                  <li class="menu-item item-1">Option-1</li>
+                  <li class="menu-item item-2">Option-2</li>
+                  <li class="menu-item item-3">Option-3</li>
+                </ul>
+              </div>
+              <h3 class="product-name">Product name</h3>
+              <span class="quantity">Текущее запас: 1 шт</span>
+            </div>
+            <div class="right">
+              <div class="product-price">
+                <span>80000</span>
+                <button class="edit-btn">
+                  <i class="fa-regular fa-pen-to-square"></i>
+                </button>
+              </div>
+              <div class="total-price">320000</div>
+              <button class="delete-btn">
+                <i class="fa-regular fa-trash-can"></i>
+              </button>
+            </div>
+          </div>
+          <div class="product-item">
+            <div class="left">
+              <input
+                type="number"
+                value="1"
+                name="count"
+                id="count"
+                class="count"
+              />
+              <div class="measure-select select">
+                <div class="selected">
+                  мл <span><i class="fa-solid fa-angle-down"></i></span>
+                </div>
+                <ul class="menu">
+                  <li class="menu-item item-1">Option-1</li>
+                  <li class="menu-item item-2">Option-2</li>
+                  <li class="menu-item item-3">Option-3</li>
+                </ul>
+              </div>
+              <h3 class="product-name">Product name</h3>
+              <span class="quantity">Текущее запас: 1 шт</span>
+            </div>
+            <div class="right">
+              <div class="product-price">
+                <span>80000</span>
+                <button class="edit-btn">
+                  <i class="fa-regular fa-pen-to-square"></i>
+                </button>
+              </div>
+              <div class="total-price">320000</div>
+              <button class="delete-btn">
+                <i class="fa-regular fa-trash-can"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="client-side">
+        <div class="top">
+          <button class="select-client">Выберите клиента</button>
+          <div class="info-order">
+            <div>
+              <p>Итого</p>
+              <p>80,000 сум</p>
+            </div>
+            <div>
+              <p>Скидка</p>
+              <p>0 сум</p>
+            </div>
+            <div>
+              <p>Итого со скидкой</p>
+              <p>80,000 сум</p>
+            </div>
+          </div>
+        </div>
+        <div class="payment-method">
+          <button class="cash-btn button-payment">
+            <i class="fa-regular fa-money-bill-1" style="color: #fff"></i>
+            Наличные
+          </button>
+          <button class="card-btn button-payment">
+            <i class="fa-regular fa-credit-card"></i> Карта
+          </button>
+          <button class="multiplication-btn button-payment">
+            <i class="fa-solid fa-star-of-life"></i>Сложная оплата
+          </button>
+          <button class="draft-btn button-payment">Черновик</button>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/32ee8f9848.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="./src/app.js"></script>
+  </body>
+</html>
