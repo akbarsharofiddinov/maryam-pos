@@ -507,4 +507,15 @@ header {
     font-size: 12px;
     padding: 0 3px;
   }
+
+  .products-box .product-item .quantity {
+    opacity: 1 !important;
+    visibility: visible !important;
+    pointer-events: all !important;
+    top: 240% !important;
+    right: 130%;
+    font-size: 11px !important;
+    padding: 3px 5px !important;
+    width: 80%;
+  }
 }
