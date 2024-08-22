@@ -33,10 +33,12 @@ const products = [
 
 const selectElement = document.querySelectorAll(".select");
 
-selectElement.forEach((el) => {
+selectElement.forEach((el, index) => {
   el.addEventListener("click", () => {
-    selectElement.forEach((element) => {
-      element.children[1].classList.remove("show");
+    selectElement.forEach((el2, index2) => {
+      if (index2 !== index) {
+        el2.children[1].classList.remove("show");
+      }
     });
     el.children[1].classList.toggle("show");
   });

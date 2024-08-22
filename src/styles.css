@@ -5,7 +5,7 @@
   padding: 0;
   outline: none;
   box-sizing: border-box;
-  color: #333;
+  color: #71717a;
   text-decoration: none;
   list-style: none;
 }
@@ -104,10 +104,18 @@ header {
 .main-content .product-side .top .seller-select,
 .products-box .product-item .measure-select {
   width: 100%;
-  border: 1px solid #ddd;
+  background-color: rgb(241, 243, 245);
+  border: none;
   padding: 7px 10px;
   border-radius: 6px;
   min-height: 35px;
+  font-size: 17px;
+}
+
+.main-content .product-side .top input {
+  padding: 20px;
+  border-radius: 24px;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.06);
 }
 
 .main-content .product-side .top .select,
@@ -298,10 +306,9 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border: 1px solid #ddd;
-  box-shadow: 3px 5px 15px rgba(0, 0, 0, 0.1);
-  padding: 8px;
-  border-radius: 5px;
+  background-color: rgb(241, 243, 245);
+  padding: 20px;
+  border-radius: 24px;
 }
 
 .products-box .product-item .left,
@@ -314,15 +321,20 @@ header {
 .products-box .product-item .count {
   max-width: 54px;
   font-size: 15px;
-  padding: 7px;
+  padding: 10px;
   border-radius: 5px;
-  border: 1px solid #ddd;
+  border-radius: 15px;
+  border: 1px solid #eee;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.06);
 }
 
 .products-box .product-item .measure-select {
   background-color: #fff;
   cursor: pointer;
-  max-width: 64px;
+  border-radius: 15px;
+  padding: 10px 18px 10px 15px;
+  border: 1px solid #eee;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.06);
 }
 
 .products-box .product-item .measure-select .selected span {
@@ -336,23 +348,30 @@ header {
 .products-box .product-item .measure-select .menu {
   width: 100px;
   z-index: 10;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid #ddd;
 }
 
 .products-box .product-item .product-name {
-  min-width: 350px;
+  min-width: 200px;
   text-align: center;
 }
 
 .products-box .product-item .product-price {
   display: flex;
+  align-items: center;
   gap: 15px;
 }
 
 .products-box .product-item .product-price span,
 .products-box .product-item .total-price {
   background-color: #fff;
-  padding: 7px;
+  padding: 10px 14px;
   border-radius: 5px;
+  border-radius: 10px;
+  border: 1px solid #eee;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.06);
 }
 
 .products-box .product-item .edit-btn,
@@ -361,10 +380,29 @@ header {
   border: none;
   padding: 7px;
   border-radius: 5px;
+  width: 34px;
+  height: 34px;
+  cursor: pointer;
+
+  transition: background-color 0.3s;
+}
+
+.products-box .product-item .total-price-box {
+  display: flex;
+  align-items: center;
+  gap: 15px;
 }
 
 .products-box .product-item .delete-btn {
   background-color: crimson;
+}
+
+.products-box .product-item .delete-btn:hover {
+  background-color: #aa0022;
+}
+
+.products-box .product-item .edit-btn:hover {
+  background-color: #234199;
 }
 
 .products-box .product-item button i::before {
@@ -396,4 +434,75 @@ header {
   opacity: 1;
   visibility: visible;
   pointer-events: all;
+}
+
+@media screen and (max-width: 768px) {
+  .main-content {
+    flex-direction: column;
+  }
+
+  .products-box .product-item {
+    padding: 10px !important;
+    justify-content: start;
+    gap: 40px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .products-box .product-item {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    padding: 10px 5px;
+    justify-content: unset !important;
+    gap: 15px;
+  }
+
+  .products-box .product-item .product-name {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+  .products-box .product-item .product-name {
+    min-width: 120px;
+  }
+
+  .products-box .product-item .right {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    width: 100% !important;
+    justify-content: space-evenly;
+  }
+
+  .products-box .product-item .product-price span,
+  .products-box .product-item .total-price,
+  .products-box .product-item .count,
+  .products-box .product-item .measure-select {
+    padding: 7px 12px;
+  }
+
+  .products-box .product-item .edit-btn,
+  .products-box .product-item .delete-btn {
+    width: 30px;
+    height: 30px;
+    font-size: 10px !important;
+  }
+
+  .product-side .top input {
+    padding: 15px !important;
+  }
+
+  .product-side .top .place {
+    font-size: 20px;
+  }
+
+  .product-side .top .select-seller {
+    font-size: 20px;
+  }
+
+  .product-side .top .select-seller span {
+    font-size: 12px;
+    padding: 0 3px;
+  }
 }
