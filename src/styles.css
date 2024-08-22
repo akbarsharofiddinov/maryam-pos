@@ -10,6 +10,12 @@
   list-style: none;
 }
 
+html,
+body {
+  width: 1024px !important;
+  height: 768px !important;
+}
+
 /* Header */
 
 header {
@@ -70,7 +76,7 @@ header {
 
 .main-content .product-side {
   padding: 16px;
-  height: calc(100vh - 120px)
+  height: calc(100vh - 120px);
 }
 
 .main-content .product-side .top {
@@ -102,11 +108,15 @@ header {
 
 .main-content .product-side .select-seller .selected {
   color: royalblue;
-  font-size: 32px;
+  font-size: 28px;
   font-weight: 800;
   display: flex;
   align-items: center;
   gap: 5px;
+}
+
+.storage-name {
+  font-size: 28px;
 }
 
 .main-content .product-side .select-seller span {
@@ -130,7 +140,7 @@ header {
 }
 
 .main-content .products-box {
-  max-height: 755px !important;
+  max-height: calc(768px - 330px) !important;
   overflow: auto;
 }
 
@@ -141,14 +151,14 @@ header {
   width: 100%;
   background-color: rgb(241, 243, 245);
   border: none;
-  padding: 20px;
+  padding: 15px;
   border-radius: 24px;
   min-height: 35px;
   font-size: 17px;
 }
 
 .main-content .product-side .top input {
-  padding: 20px;
+  padding: 15px;
   border-radius: 24px;
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.06);
 }
@@ -289,7 +299,7 @@ header {
 
 /* Product List */
 .products-list .no-product {
-  font-size: 32px;
+  font-size: 28px;
   text-align: center;
   margin: 25px 0;
   color: #555;
@@ -342,7 +352,7 @@ header {
   align-items: center;
   justify-content: space-between;
   background-color: rgb(241, 243, 245);
-  padding: 20px;
+  padding: 18px;
   border-radius: 24px;
 }
 
@@ -356,9 +366,8 @@ header {
 .products-box .product-item .count {
   max-width: 54px;
   font-size: 15px;
-  padding: 10px;
-  border-radius: 5px;
-  border-radius: 15px;
+  padding: 8px;
+  border-radius: 12px;
   border: 1px solid #eee;
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.06);
 }
@@ -366,8 +375,9 @@ header {
 .products-box .product-item .measure-select {
   background-color: #fff;
   cursor: pointer;
-  border-radius: 15px;
-  padding: 10px 18px 10px 15px;
+  border-radius: 12px;
+  padding: 10px 12px 10px 12px;
+  width: 65px;
   border: 1px solid #eee;
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.06);
 }
