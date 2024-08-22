@@ -62,23 +62,36 @@ header {
 .main-content .product-side,
 .main-content .client-side {
   border: 1px solid #ddd;
-  min-height: 751px;
+}
+
+.main-content .client-side {
+  max-height: 450px;
 }
 
 .main-content .product-side {
   padding: 16px;
+  height: calc(100vh - 120px)
 }
 
 .main-content .product-side .top {
   display: flex;
   flex-direction: column;
+
+  background-color: #fff;
 }
 
 .main-content .product-side .top > div {
   display: flex;
   align-items: center;
-  gap: 40px;
+  justify-content: space-between;
   margin: 20px 0;
+}
+
+.main-content .product-side .top > div .right {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  gap: 20px;
 }
 
 .main-content .product-side .select-seller {
@@ -114,6 +127,11 @@ header {
   display: flex;
   align-items: center;
   gap: 15px;
+}
+
+.main-content .products-box {
+  max-height: 755px !important;
+  overflow: auto;
 }
 
 .main-content .product-side .top input,
