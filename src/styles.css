@@ -535,4 +535,8 @@ header {
     padding: 3px 5px !important;
     width: 85%;
   }
+
+  .main-content .product-side .top > div {
+    gap: 15px !important;
+  }
 }
